@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_00.c                                          :+:      :+:    :+:   */
+/*   C00.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lide-oli <lide-oli@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/10 08:32:06 by lide-oli          #+#    #+#             */
-/*   Updated: 2025/09/10 08:42:00 by lide-oli         ###   ########.fr       */
+/*   Updated: 2025/09/10 09:12:07 by lide-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -15,6 +15,7 @@
 #include "ex02/ft_print_reverse_alphabet.c"
 #include "ex03/ft_print_numbers.c"
 #include "ex04/ft_is_negative.c"
+#include "ex05/ft_print_comb.c"
 
 void	ft_print(char *str)
 {
@@ -45,6 +46,9 @@ int	main(void)
 	ft_print("Teste 0: ");
 	ft_is_negative(0);
 	write(1, "\n", 1);
+	ft_print("\n\nExercicio 05:\n");
+	ft_print_comb();
+	return (0);
 }
 
 
